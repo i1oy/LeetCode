@@ -2,16 +2,16 @@ class Solution {
     public static void main(String[] args) {
         Solution app = new Solution();
         System.out.println(
-                app.uniquePaths(7, 3)
+                app.uniquePaths2(7, 3)
         );
         System.out.println(
-                app.uniquePaths(3, 7)
+                app.uniquePaths2(3, 7)
         );
         System.out.println(
-                app.uniquePaths(3, 3)
+                app.uniquePaths2(3, 3)
         );
         System.out.println(
-                app.uniquePaths(3, 2)
+                app.uniquePaths2(3, 2)
         );
 
     }
@@ -32,5 +32,13 @@ class Solution {
             }
         }
         return grid[0][0];
+    }
+
+    public int uniquePaths2(int m, int n) {
+        long ans = 1;
+        for (int i = 1, j = n; i < m; ++i, ++j) {
+            ans =  ans * j / i;
+        }
+        return (int)ans;
     }
 }
