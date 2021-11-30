@@ -29,7 +29,7 @@ public class Solution {
     private int n;
     private int size;
     private Random random = new Random();
-    private Map<Integer, Integer> flipMap;
+    private Map<Integer, Integer> flipMap = new HashMap<>();
     // private int[] arr;
 
     public Solution(int m, int n) {
@@ -59,11 +59,7 @@ public class Solution {
 
     public void reset() {
         this.size = m * n;
-        if (flipMap == null) {
-            this.flipMap = new HashMap<>();
-        } else {
-            this.flipMap.clear();
-        }
+        this.flipMap.clear();
 
         /**
          * Memory Limit Exceeded
