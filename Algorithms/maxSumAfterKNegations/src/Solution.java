@@ -34,7 +34,7 @@ public class Solution {
                 else negativeNums.add(num);
             }
         }
-        Collections.sort(negativeNums, Integer::compareTo);
+        negativeNums.sort(Integer::compareTo);
         int index = 0;
         int negativeNumsLen = negativeNums.size();
         int end = Math.min(k, negativeNumsLen);
