@@ -2,11 +2,11 @@ public class Solution {
     public static void main(String[] args) {
         Solution app = new Solution();
         System.out.println(app.nextGreatestLetter(new char[]{'a', 'b'}, 'z'));
-        System.out.println(app.nextG(new char[]{'c', 'f', 'j'}, 'a'));
+        System.out.println(app.nextGreatestLetter2(new char[]{'c', 'f', 'j'}, 'a'));
         System.out.println(app.nextGreatestLetter(new char[]{'c', 'f', 'j'}, 'c'));
         System.out.println(app.nextGreatestLetter(new char[]{'c', 'f', 'j'}, 'd'));
-        System.out.println(app.nextG(new char[]{'c', 'f', 'j'}, 'z'));
-        System.out.println(app.nextG(new char[]{'e','e','e','e','e','e','n','n','n','n'}, 'z'));
+        System.out.println(app.nextGreatestLetter2(new char[]{'c', 'f', 'j'}, 'z'));
+        System.out.println(app.nextGreatestLetter2(new char[]{'e','e','e','e','e','e','n','n','n','n'}, 'z'));
     }
 
     /**
